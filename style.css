@@ -1,0 +1,161 @@
+*{
+    font-family: 'Open Sans','Myriad Pro', sans-serif;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #c4c4c4c4;
+    font-family: 'Open Sans','Myriad Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+    padding: 20px;
+    height: 80px;
+    border-bottom:2px solid black;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h4{
+    font-weight: 800;
+    font-size: 1.6em;
+}
+h5{
+    font-size: 1em;
+}
+header .right{
+    float: right;
+    position: relative;
+    animation-name: right;
+    animation-duration: 1s;
+}
+
+header .left{
+    float: left;
+    animation-name: left;
+    position: relative;
+    animation-duration: 1s;
+}
+
+.welcome{
+    background-image: url(fun-bg.jpg);
+    background-position: top ;
+    background-repeat: repeat;
+    height: 600px;
+}
+.welcome h1{
+    font-size: 3.5em;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    animation-name: wh1;
+    animation-duration: 2s;
+}
+
+.welcome p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    position: relative;
+    top: 150px;
+    animation-name: wp;
+    animation-duration: 2s;
+}
+.content .btn{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
+    margin-top: 57px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.btn a{
+    text-align: center;
+    margin: auto;
+    
+}
+
+.welcome .btn:hover {
+    background-color:#c4c4c4c4;
+    color: black; 
+}
+
+#content{
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+#h1-edu{
+    font-size: 3.5em;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    animation-name: h1-edu;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    
+}
+#cates{
+    color: aquamarine;
+    font-size:125px; 
+    border-bottom: 2px solid black;
+}
+.exam{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.exam .items{
+    padding:30px;
+    background-color: bisque;
+}
+.exam > div:nth-child(even){
+    border-left: 1px solid black;
+    border-left-width: medium;
+}
+.exam > div:nth-child(odd){
+    text-align: right;
+}
+
+footer{
+    height: 100px;
+    background-color: darkgray;
+}
+footer p {
+    text-align: center;
+    padding-top: 45px;
+}
+@keyframes left{
+    0%{left:-10000px;}
+    100%{left:0px;}
+}
+@keyframes right{
+    0%{right:-10000px;}
+    100%{right:0px;}
+}
+@keyframes wh1{
+    0%{top:-1000px;}
+    100%{top:100px;}
+}
+@keyframes wp{
+    0%{left:-1000px;}
+    100%{left:00px;}
+}
+
+@keyframes h1-edu{
+    0%{opacity:0;}
+    15%{opacity:0.15;}
+    25%{opacity:0.25;}
+    50%{opacity:50;}
+    75%{opacity:0.75;}
+    100%{opacity:1;}
+}
